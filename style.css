@@ -18,6 +18,9 @@ html {
 body {
     height: 100vh;
     background-image: linear-gradient(to right, red, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -25,6 +28,7 @@ body {
     height: 400px;
     background-color: #242628;
     border-radius: 12px;
+    
     /* margin: 282px auto; */
 }
 
@@ -34,6 +38,15 @@ body {
     border: 4px solid var(--primary-color) ;
     border-radius: 50%;
     background-color: #ccc;
+    overflow: hidden;
+    margin: 25px auto;
+}
+
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card_name {
