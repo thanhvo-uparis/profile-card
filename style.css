@@ -28,11 +28,11 @@ body {
     height: 400px;
     background-color: #242628;
     border-radius: 12px;
-    /* margin: 282px auto; */
-    display: flex;
+    text-align: center;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; */
 }
 
 .card_img {
@@ -42,7 +42,7 @@ body {
     border-radius: 50%;
     background-color: #ccc;
     overflow: hidden;
-    margin-top: 25px
+    margin: 25px auto;
 }
 
 .card_img img {
@@ -50,4 +50,41 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+
+.card h2 {
+    color: #fff;
+}
+
+.card p {
+    color: var(--primary-color);
+}
+
+.card_social i {
+    font-size: 23px;
+    color: #fff;
+    margin: 30px 20px 42px;
+    transition: 0.4s;
+}
+
+.card_social i:hover {
+    color: var(--primary-color);
+    
+}
+
+.card button {
+    width: 120px;
+    height: 42px; 
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.card button:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
 }
